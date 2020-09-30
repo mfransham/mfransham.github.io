@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>LaTeX | Mark Fransham | spatial inequality and social policy</title>
-    <link>https://mfransham.github.io/tag/latex/</link>
-      <atom:link href="https://mfransham.github.io/tag/latex/index.xml" rel="self" type="application/rss+xml" />
+    <link>/tag/latex/</link>
+      <atom:link href="/tag/latex/index.xml" rel="self" type="application/rss+xml" />
     <description>LaTeX</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Mark Fransham 2020</copyright><lastBuildDate>Mon, 13 Jul 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://mfransham.github.io/images/icon_hudee32e1bcaef0a55d5bba9c82fb4c3ee_621_512x512_fill_lanczos_center_2.png</url>
+      <url>/images/icon_hudee32e1bcaef0a55d5bba9c82fb4c3ee_621_512x512_fill_lanczos_center_2.png</url>
       <title>LaTeX</title>
-      <link>https://mfransham.github.io/tag/latex/</link>
+      <link>/tag/latex/</link>
     </image>
     
     <item>
       <title>Combining pdf documents with LaTeX</title>
-      <link>https://mfransham.github.io/blog/combining-pdf-documents-with-latex/</link>
+      <link>/blog/combining-pdf-documents-with-latex/</link>
       <pubDate>Mon, 13 Jul 2020 00:00:00 +0000</pubDate>
-      <guid>https://mfransham.github.io/blog/combining-pdf-documents-with-latex/</guid>
+      <guid>/blog/combining-pdf-documents-with-latex/</guid>
       <description>&lt;p&gt;I often find myself needing to select individual pages from a pdf I haven&amp;rsquo;t created, or combine pdfs from many single pdf documents.  With LaTeX this is super straightforward - here&amp;rsquo;s the basic code structure to perform this task.  This code assumes that the &lt;code&gt;.tex&lt;/code&gt; file is in the same folder as the documents you are combining.&lt;/p&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;

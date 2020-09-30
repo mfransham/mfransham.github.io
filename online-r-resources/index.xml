@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Free online resources for learning statistics in R | Mark Fransham | spatial inequality and social policy</title>
-    <link>https://mfransham.github.io/online-r-resources/</link>
-      <atom:link href="https://mfransham.github.io/online-r-resources/index.xml" rel="self" type="application/rss+xml" />
+    <link>/online-r-resources/</link>
+      <atom:link href="/online-r-resources/index.xml" rel="self" type="application/rss+xml" />
     <description>Free online resources for learning statistics in R</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Mark Fransham 2020</copyright>
     <image>
-      <url>https://mfransham.github.io/images/icon_hudee32e1bcaef0a55d5bba9c82fb4c3ee_621_512x512_fill_lanczos_center_2.png</url>
+      <url>/images/icon_hudee32e1bcaef0a55d5bba9c82fb4c3ee_621_512x512_fill_lanczos_center_2.png</url>
       <title>Free online resources for learning statistics in R</title>
-      <link>https://mfransham.github.io/online-r-resources/</link>
+      <link>/online-r-resources/</link>
     </image>
     
   </channel>

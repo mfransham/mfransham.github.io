@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mark Fransham | Mark Fransham | spatial inequality and social policy</title>
-    <link>https://mfransham.github.io/author/mark-fransham/</link>
-      <atom:link href="https://mfransham.github.io/author/mark-fransham/index.xml" rel="self" type="application/rss+xml" />
+    <link>/author/mark-fransham/</link>
+      <atom:link href="/author/mark-fransham/index.xml" rel="self" type="application/rss+xml" />
     <description>Mark Fransham</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Mark Fransham 2020</copyright>
     <image>
-      <url>https://mfransham.github.io/images/icon_hudee32e1bcaef0a55d5bba9c82fb4c3ee_621_512x512_fill_lanczos_center_2.png</url>
+      <url>/images/icon_hudee32e1bcaef0a55d5bba9c82fb4c3ee_621_512x512_fill_lanczos_center_2.png</url>
       <title>Mark Fransham</title>
-      <link>https://mfransham.github.io/author/mark-fransham/</link>
+      <link>/author/mark-fransham/</link>
     </image>
     
   </channel>
