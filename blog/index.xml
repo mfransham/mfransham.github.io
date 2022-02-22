@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts | Mark Fransham | spatial inequality and social policy</title>
-    <link>/blog/</link>
-      <atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    <title>Posts | Mark Fransham | social data science</title>
+    <link>https://mfransham.github.io/blog/</link>
+      <atom:link href="https://mfransham.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Mark Fransham 2020</copyright><lastBuildDate>Mon, 13 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Mark Fransham 2022</copyright><lastBuildDate>Mon, 13 Jul 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hudee32e1bcaef0a55d5bba9c82fb4c3ee_621_512x512_fill_lanczos_center_2.png</url>
+      <url>https://mfransham.github.io/images/icon_hudee32e1bcaef0a55d5bba9c82fb4c3ee_621_512x512_fill_lanczos_center_3.png</url>
       <title>Posts</title>
-      <link>/blog/</link>
+      <link>https://mfransham.github.io/blog/</link>
     </image>
     
     <item>
       <title>Combining pdf documents with LaTeX</title>
-      <link>/blog/combining-pdf-documents-with-latex/</link>
+      <link>https://mfransham.github.io/blog/combining-pdf-documents-with-latex/</link>
       <pubDate>Mon, 13 Jul 2020 00:00:00 +0000</pubDate>
-      <guid>/blog/combining-pdf-documents-with-latex/</guid>
+      <guid>https://mfransham.github.io/blog/combining-pdf-documents-with-latex/</guid>
       <description>&lt;p&gt;I often find myself needing to select individual pages from a pdf I haven&amp;rsquo;t created, or combine pdfs from many single pdf documents.  With LaTeX this is super straightforward - here&amp;rsquo;s the basic code structure to perform this task.  This code assumes that the &lt;code&gt;.tex&lt;/code&gt; file is in the same folder as the documents you are combining.&lt;/p&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
@@ -25,6 +25,85 @@
 &lt;/div&gt;
 &lt;script type=&#34;application/javascript&#34; src=&#34;https://gist.github.com/mfransham/ace96ab50b84805ce7c02113f8a7b23b.js&#34;&gt;&lt;/script&gt;
 
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://mfransham.github.io/blog/guide-to-stata-for-r-users/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mfransham.github.io/blog/guide-to-stata-for-r-users/</guid>
+      <description>&lt;h1 id=&#34;stata-for-r-users-a-quick-start-guide&#34;&gt;Stata for R users: a quick start guide&lt;/h1&gt;
+&lt;p&gt;So you have an exciting international research collaboration: hurray!  Your collaborators all want to do the analysis in Stata: boo :(&lt;/p&gt;
+&lt;p&gt;While there are a lot of resources out there that teach Stata users how to work in R, the reverse is not true.  The only resources I can find on teaching R users how to use Stata is this 
+&lt;a href=&#34;https://raw.githubusercontent.com/rstudio/cheatsheets/master/stata2r.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stata to R cheat sheet&lt;/a&gt; which is designed for going from Stata to R, but is useful for the other direction too.&lt;/p&gt;
+&lt;p&gt;Here are my notes on going from R to Stata, a gift from my present to my future self as I attempt to make myself Stata-literate.  If they are useful for you too, then great!&lt;/p&gt;
+&lt;h2 id=&#34;some-key-resources&#34;&gt;Some key resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://www.stata.com/manuals/gsw.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Getting Started with Stata&lt;/a&gt; for Windows (release 17) (abbreviated GSW below)&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://raw.githubusercontent.com/rstudio/cheatsheets/master/stata2r.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stata to R cheat sheet&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;script-files&#34;&gt;Script files&lt;/h2&gt;
+&lt;p&gt;Script files in Stata are called &amp;lsquo;do-files&amp;rsquo;, matching their file extension &lt;code&gt;.do&lt;/code&gt;.  They are edited in the &amp;lsquo;Do-file Editor&amp;rsquo; which you can open either with a toolbar button or Window -&amp;gt; Do-file Editor.  Comments in do files begin with an asterix &lt;code&gt;*&lt;/code&gt; or double forward slash &lt;code&gt;//&lt;/code&gt; and you can run code with the &lt;code&gt;ctrl+d&lt;/code&gt; shortcut (similar to &lt;code&gt;ctrl+Enter&lt;/code&gt; in R).&lt;/p&gt;
+&lt;p&gt;The basic structure of Stata syntax is&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;commandname main_arguments, optional_arguments&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;i.e. optional arguments that modify Stata commands are (optionally) included after a comma that follows the required arguments.  Arguments in Stata are &lt;em&gt;not&lt;/em&gt; generally enclosed in brackets and, apart from the one comma above, multiple arguments are generally not separated with commas (unlike R).&lt;/p&gt;
+&lt;p&gt;Help on Stata commands can be found using &lt;code&gt;help commandname&lt;/code&gt; at the comment line or searching from the Help menu.&lt;/p&gt;
+&lt;h2 id=&#34;the-working-directory&#34;&gt;The working directory&lt;/h2&gt;
+&lt;p&gt;Like R, Stata has a working directory concept.  This is the place where outputs will be saved, and is also the place Stata will look for data if importing from the command line rather than using File -&amp;gt; Open.  The working directory is displayed in a ribbon at the bottom of the main Stata window.  The working directory can be changed at the command line with &lt;code&gt;cd&lt;/code&gt; or from the File menu.&lt;/p&gt;
+&lt;h2 id=&#34;importing-data&#34;&gt;Importing data&lt;/h2&gt;
+&lt;p&gt;To import delimited text files such as comma-separated, tab-separated etc, use the command &lt;code&gt;import delimited&lt;/code&gt; followed by the name of the file.  From GSW: &amp;ldquo;if filename contains spaces,
+put double quotes around the filename, and include the path if filename is not in the current working
+directory&amp;rdquo;. For example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;import delimited my-file.csv
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This will also import directly from a URL, for example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;import delimited &amp;quot;https://sites.psu.edu/psucz/files/2018/09/counties90-29c6g4u.csv&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Excel files can be imported using &lt;code&gt;import excel&lt;/code&gt;.  An example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;import excel &amp;quot;../../../Data/Boundaries/United States/ipums_puma_1990_5pct/1990_PUMAs_5pct.xls&amp;quot;, firstrow
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here, the option &lt;code&gt;firstrow&lt;/code&gt; tells Stata to use the first row as variable names.  Note that Stata supports relative file paths with &lt;code&gt;../&lt;/code&gt; in the same way as R.&lt;/p&gt;
+&lt;p&gt;Once imported, a dataset can be browsed using the Data Editor - a button for this is at the top of the Stata window.  The Variables Manager can be used to check the variable types and import format etc.&lt;/p&gt;
+&lt;h3 id=&#34;no-data-in-memory-would-be-lost&#34;&gt;&lt;code&gt;no; data in memory would be lost&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;So this is where Stata gets a bit frustrating for an R user.  If you try to import a second dataset after having imported another, you will get the above error message.  This is because Stata can only hold a single dataset in memory at one time.  To clear the current dataset from memory type &lt;code&gt;clear&lt;/code&gt;.  Obviously this will delete any unsaved changes.&lt;/p&gt;
+&lt;h2 id=&#34;renaming-dropping-reordering-variables&#34;&gt;Renaming, dropping, reordering variables&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;keep var1 var2 ...
+drop var1 var2 ...
+order var1 var2 ...
+rename oldname newname
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;create-new-variables&#34;&gt;Create new variables&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;gen newvar = expression&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;For example:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;gen fips = State * 1000 + CountyFIPScode&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;This will not overwrite an existing variable - unlike R, the user will get an error message.  To overwrite an existing variable use &lt;code&gt;replace&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;joining-datasets&#34;&gt;Joining datasets&lt;/h2&gt;
+&lt;p&gt;This isn&amp;rsquo;t too difficult to do, but as far as I can tell so far there are some issues with doing this in Stata that are irritating to the R user who is used to the &lt;code&gt;left_join&lt;/code&gt; etc functions in &lt;code&gt;dplyr&lt;/code&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;only one dataset in memory at a time, so you can&amp;rsquo;t look at them both&lt;/li&gt;
+&lt;li&gt;the variables that you are joining on must have the same name&lt;/li&gt;
+&lt;li&gt;the external file you are merging (i.e. the one not currently in memory) must be a .dta file&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The command in Stata is &lt;code&gt;merge&lt;/code&gt;.  Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;merge m:1 fips using counties, keepusing(ers90)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In this case &lt;code&gt;fips&lt;/code&gt; is the variable to join on, &lt;code&gt;m:1&lt;/code&gt; means many-to-one join, &lt;code&gt;counties&lt;/code&gt; is the dataset brought in to merge, &lt;code&gt;ers90&lt;/code&gt; is the one variable from &lt;code&gt;counties&lt;/code&gt; that we want to keep when merged.&lt;/p&gt;
+&lt;h2 id=&#34;erasing-files&#34;&gt;Erasing files&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;erase filename.ext&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;I needed to do this as a consequence of having to write out a csv file as a dta file so that I could then use &lt;code&gt;merge&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;descriptive-statistics&#34;&gt;Descriptive statistics&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;summarize&lt;/code&gt; or &lt;code&gt;summ&lt;/code&gt; for short, the detail option gives additional statistics.  One variable can be specified, otherwise the entire dataset is summarised (similarly to &lt;code&gt;summary()&lt;/code&gt; in R).  Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;tabstat&lt;/code&gt; and &lt;code&gt;tabulate&lt;/code&gt; are useful options for categorical variables, I believe.&lt;/p&gt;
+&lt;h2 id=&#34;group_by-and-summarise&#34;&gt;group_by() and summarise()&lt;/h2&gt;
+&lt;p&gt;The equivalent to &lt;code&gt;group-by() %&amp;gt;% summarise()&lt;/code&gt; in Stata is &lt;code&gt;collapse&lt;/code&gt;.  For example&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;collapse (sum) PUMApopnincz = Areapopulation, by(ers90 State PUMA PUMApopulation)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This replaces the existing dataset with a collapsed dataset, grouped by the variables in &lt;code&gt;by(varlist)&lt;/code&gt;.  The specification of summary values (there can be more than one) come before the comma.  Translation of the above: for records grouped by the variables in &lt;code&gt;by()&lt;/code&gt;, summarise &lt;code&gt;Areapopulation&lt;/code&gt; with the function &lt;code&gt;sum&lt;/code&gt; and store it in a new variable &lt;code&gt;PUMApopnincz&lt;/code&gt;.  If no grouping variables are specified in &lt;code&gt;by()&lt;/code&gt; this summarises the entire set of observations.&lt;/p&gt;
 </description>
     </item>
     

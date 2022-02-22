@@ -1,111 +1,67 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
-    <loc>/talk/example/</loc>
+    <loc>https://mfransham.github.io/talk/example/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
+  </url><url>
+    <loc>https://mfransham.github.io/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/talk/</loc>
+  </url><url>
+    <loc>https://mfransham.github.io/talk/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/combining-pdf-documents-with-latex/</loc>
+  </url><url>
+    <loc>https://mfransham.github.io/blog/combining-pdf-documents-with-latex/</loc>
     <lastmod>2020-07-13T20:02:42+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tag/latex/</loc>
+  </url><url>
+    <loc>https://mfransham.github.io/tag/latex/</loc>
     <lastmod>2020-07-13T20:02:42+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/</loc>
+  </url><url>
+    <loc>https://mfransham.github.io/blog/</loc>
     <lastmod>2020-07-13T20:02:42+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
+  </url><url>
+    <loc>https://mfransham.github.io/tags/</loc>
     <lastmod>2020-07-13T20:02:42+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/slides/</loc>
+  </url><url>
+    <loc>https://mfransham.github.io/slides/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/slides/example/</loc>
+  </url><url>
+    <loc>https://mfransham.github.io/slides/example/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tag/deep-learning/</loc>
+  </url><url>
+    <loc>https://mfransham.github.io/tag/deep-learning/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tag/demo/</loc>
+  </url><url>
+    <loc>https://mfransham.github.io/tag/demo/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/project/external-project/</loc>
+  </url><url>
+    <loc>https://mfransham.github.io/project/external-project/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/project/internal-project/</loc>
+  </url><url>
+    <loc>https://mfransham.github.io/project/internal-project/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/project/</loc>
+  </url><url>
+    <loc>https://mfransham.github.io/project/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mfransham.github.io/blog/guide-to-stata-for-r-users/</loc>
+  </url><url>
+    <loc>https://mfransham.github.io/authors/</loc>
+  </url><url>
+    <loc>https://mfransham.github.io/categories/</loc>
+  </url><url>
+    <loc>https://mfransham.github.io/cv/</loc>
+  </url><url>
+    <loc>https://mfransham.github.io/online-r-resources/</loc>
+  </url><url>
+    <loc>https://mfransham.github.io/author/mark-fransham/</loc>
+  </url><url>
+    <loc>https://mfransham.github.io/publication_types/</loc>
+  </url><url>
+    <loc>https://mfransham.github.io/research/</loc>
+  </url><url>
+    <loc>https://mfransham.github.io/teaching/</loc>
+  </url><url>
+    <loc>https://mfransham.github.io/author/%E5%90%B3%E6%81%A9%E9%81%94/</loc>
   </url>
-  
-  <url>
-    <loc>/authors/</loc>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>/cv/</loc>
-  </url>
-  
-  <url>
-    <loc>/online-r-resources/</loc>
-  </url>
-  
-  <url>
-    <loc>/author/mark-fransham/</loc>
-  </url>
-  
-  <url>
-    <loc>/publication_types/</loc>
-  </url>
-  
-  <url>
-    <loc>/research/</loc>
-  </url>
-  
-  <url>
-    <loc>/teaching/</loc>
-  </url>
-  
-  <url>
-    <loc>/author/%E5%90%B3%E6%81%A9%E9%81%94/</loc>
-  </url>
-  
 </urlset>

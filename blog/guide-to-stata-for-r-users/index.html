@@ -27,10 +27,11 @@
   
     
   
-  <meta name="description" content="How to extract pages from pdf documents and combine them in LaTeX">
+  <meta name="description" content="Stata for R users: a quick start guide So you have an exciting international research collaboration: hurray! Your collaborators all want to do the analysis in Stata: boo :(
+While there are a lot of resources out there that teach Stata users how to work in R, the reverse is not true.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://mfransham.github.io/blog/combining-pdf-documents-with-latex/">
+  <link rel="alternate" hreflang="en-us" href="https://mfransham.github.io/blog/guide-to-stata-for-r-users/">
 
   
 
@@ -224,7 +225,7 @@
   <link rel="icon" type="image/png" href="/images/icon_hudee32e1bcaef0a55d5bba9c82fb4c3ee_621_32x32_fill_lanczos_center_3.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hudee32e1bcaef0a55d5bba9c82fb4c3ee_621_192x192_fill_lanczos_center_3.png">
 
-  <link rel="canonical" href="https://mfransham.github.io/blog/combining-pdf-documents-with-latex/">
+  <link rel="canonical" href="https://mfransham.github.io/blog/guide-to-stata-for-r-users/">
 
   
   
@@ -243,15 +244,14 @@
   <meta property="twitter:creator" content="@markfransham">
   
   <meta property="og:site_name" content="Mark Fransham | social data science">
-  <meta property="og:url" content="https://mfransham.github.io/blog/combining-pdf-documents-with-latex/">
-  <meta property="og:title" content="Combining pdf documents with LaTeX | Mark Fransham | social data science">
-  <meta property="og:description" content="How to extract pages from pdf documents and combine them in LaTeX"><meta property="og:image" content="https://mfransham.github.io/images/icon_hudee32e1bcaef0a55d5bba9c82fb4c3ee_621_512x512_fill_lanczos_center_3.png">
+  <meta property="og:url" content="https://mfransham.github.io/blog/guide-to-stata-for-r-users/">
+  <meta property="og:title" content=" | Mark Fransham | social data science">
+  <meta property="og:description" content="Stata for R users: a quick start guide So you have an exciting international research collaboration: hurray! Your collaborators all want to do the analysis in Stata: boo :(
+While there are a lot of resources out there that teach Stata users how to work in R, the reverse is not true."><meta property="og:image" content="https://mfransham.github.io/images/icon_hudee32e1bcaef0a55d5bba9c82fb4c3ee_621_512x512_fill_lanczos_center_3.png">
   <meta property="twitter:image" content="https://mfransham.github.io/images/icon_hudee32e1bcaef0a55d5bba9c82fb4c3ee_621_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2020-07-13T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-07-13T20:02:42&#43;01:00">
   
 
   
@@ -270,7 +270,7 @@
 
 
 
-  <title>Combining pdf documents with LaTeX | Mark Fransham | social data science</title>
+  <title> | Mark Fransham | social data science</title>
 
 </head>
 <body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
@@ -474,7 +474,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>Combining pdf documents with LaTeX</h1>
+  <h1></h1>
 
   
 
@@ -492,10 +492,8 @@
     
     
       
-          Last updated on
-      
     
-    Jul 13, 2020
+    Jan 1, 0001
   </span>
   
 
@@ -535,14 +533,77 @@
   <div class="article-container">
 
     <div class="article-style">
-      <p>I often find myself needing to select individual pages from a pdf I haven&rsquo;t created, or combine pdfs from many single pdf documents.  With LaTeX this is super straightforward - here&rsquo;s the basic code structure to perform this task.  This code assumes that the <code>.tex</code> file is in the same folder as the documents you are combining.</p>
-<div class="alert alert-note">
-  <div>
-    This code requires a working installation of LaTeX on your machine, such as <a href="https://miktex.org/download">MiKTeX</a>
-  </div>
-</div>
-<script type="application/javascript" src="https://gist.github.com/mfransham/ace96ab50b84805ce7c02113f8a7b23b.js"></script>
-
+      <h1 id="stata-for-r-users-a-quick-start-guide">Stata for R users: a quick start guide</h1>
+<p>So you have an exciting international research collaboration: hurray!  Your collaborators all want to do the analysis in Stata: boo :(</p>
+<p>While there are a lot of resources out there that teach Stata users how to work in R, the reverse is not true.  The only resources I can find on teaching R users how to use Stata is this 
+<a href="https://raw.githubusercontent.com/rstudio/cheatsheets/master/stata2r.pdf" target="_blank" rel="noopener">Stata to R cheat sheet</a> which is designed for going from Stata to R, but is useful for the other direction too.</p>
+<p>Here are my notes on going from R to Stata, a gift from my present to my future self as I attempt to make myself Stata-literate.  If they are useful for you too, then great!</p>
+<h2 id="some-key-resources">Some key resources</h2>
+<ul>
+<li>
+<a href="https://www.stata.com/manuals/gsw.pdf" target="_blank" rel="noopener">Getting Started with Stata</a> for Windows (release 17) (abbreviated GSW below)</li>
+<li>
+<a href="https://raw.githubusercontent.com/rstudio/cheatsheets/master/stata2r.pdf" target="_blank" rel="noopener">Stata to R cheat sheet</a></li>
+</ul>
+<h2 id="script-files">Script files</h2>
+<p>Script files in Stata are called &lsquo;do-files&rsquo;, matching their file extension <code>.do</code>.  They are edited in the &lsquo;Do-file Editor&rsquo; which you can open either with a toolbar button or Window -&gt; Do-file Editor.  Comments in do files begin with an asterix <code>*</code> or double forward slash <code>//</code> and you can run code with the <code>ctrl+d</code> shortcut (similar to <code>ctrl+Enter</code> in R).</p>
+<p>The basic structure of Stata syntax is</p>
+<p><code>commandname main_arguments, optional_arguments</code></p>
+<p>i.e. optional arguments that modify Stata commands are (optionally) included after a comma that follows the required arguments.  Arguments in Stata are <em>not</em> generally enclosed in brackets and, apart from the one comma above, multiple arguments are generally not separated with commas (unlike R).</p>
+<p>Help on Stata commands can be found using <code>help commandname</code> at the comment line or searching from the Help menu.</p>
+<h2 id="the-working-directory">The working directory</h2>
+<p>Like R, Stata has a working directory concept.  This is the place where outputs will be saved, and is also the place Stata will look for data if importing from the command line rather than using File -&gt; Open.  The working directory is displayed in a ribbon at the bottom of the main Stata window.  The working directory can be changed at the command line with <code>cd</code> or from the File menu.</p>
+<h2 id="importing-data">Importing data</h2>
+<p>To import delimited text files such as comma-separated, tab-separated etc, use the command <code>import delimited</code> followed by the name of the file.  From GSW: &ldquo;if filename contains spaces,
+put double quotes around the filename, and include the path if filename is not in the current working
+directory&rdquo;. For example:</p>
+<pre><code>import delimited my-file.csv
+</code></pre>
+<p>This will also import directly from a URL, for example:</p>
+<pre><code>import delimited &quot;https://sites.psu.edu/psucz/files/2018/09/counties90-29c6g4u.csv&quot;
+</code></pre>
+<p>Excel files can be imported using <code>import excel</code>.  An example:</p>
+<pre><code>import excel &quot;../../../Data/Boundaries/United States/ipums_puma_1990_5pct/1990_PUMAs_5pct.xls&quot;, firstrow
+</code></pre>
+<p>Here, the option <code>firstrow</code> tells Stata to use the first row as variable names.  Note that Stata supports relative file paths with <code>../</code> in the same way as R.</p>
+<p>Once imported, a dataset can be browsed using the Data Editor - a button for this is at the top of the Stata window.  The Variables Manager can be used to check the variable types and import format etc.</p>
+<h3 id="no-data-in-memory-would-be-lost"><code>no; data in memory would be lost</code></h3>
+<p>So this is where Stata gets a bit frustrating for an R user.  If you try to import a second dataset after having imported another, you will get the above error message.  This is because Stata can only hold a single dataset in memory at one time.  To clear the current dataset from memory type <code>clear</code>.  Obviously this will delete any unsaved changes.</p>
+<h2 id="renaming-dropping-reordering-variables">Renaming, dropping, reordering variables</h2>
+<pre><code>keep var1 var2 ...
+drop var1 var2 ...
+order var1 var2 ...
+rename oldname newname
+</code></pre>
+<h2 id="create-new-variables">Create new variables</h2>
+<p><code>gen newvar = expression</code></p>
+<p>For example:</p>
+<p><code>gen fips = State * 1000 + CountyFIPScode</code></p>
+<p>This will not overwrite an existing variable - unlike R, the user will get an error message.  To overwrite an existing variable use <code>replace</code>.</p>
+<h2 id="joining-datasets">Joining datasets</h2>
+<p>This isn&rsquo;t too difficult to do, but as far as I can tell so far there are some issues with doing this in Stata that are irritating to the R user who is used to the <code>left_join</code> etc functions in <code>dplyr</code>:</p>
+<ul>
+<li>only one dataset in memory at a time, so you can&rsquo;t look at them both</li>
+<li>the variables that you are joining on must have the same name</li>
+<li>the external file you are merging (i.e. the one not currently in memory) must be a .dta file</li>
+</ul>
+<p>The command in Stata is <code>merge</code>.  Example:</p>
+<pre><code>merge m:1 fips using counties, keepusing(ers90)
+</code></pre>
+<p>In this case <code>fips</code> is the variable to join on, <code>m:1</code> means many-to-one join, <code>counties</code> is the dataset brought in to merge, <code>ers90</code> is the one variable from <code>counties</code> that we want to keep when merged.</p>
+<h2 id="erasing-files">Erasing files</h2>
+<p><code>erase filename.ext</code></p>
+<p>I needed to do this as a consequence of having to write out a csv file as a dta file so that I could then use <code>merge</code>.</p>
+<h2 id="descriptive-statistics">Descriptive statistics</h2>
+<p><code>summarize</code> or <code>summ</code> for short, the detail option gives additional statistics.  One variable can be specified, otherwise the entire dataset is summarised (similarly to <code>summary()</code> in R).  Example:</p>
+<pre><code>
+</code></pre>
+<p><code>tabstat</code> and <code>tabulate</code> are useful options for categorical variables, I believe.</p>
+<h2 id="group_by-and-summarise">group_by() and summarise()</h2>
+<p>The equivalent to <code>group-by() %&gt;% summarise()</code> in Stata is <code>collapse</code>.  For example</p>
+<pre><code>collapse (sum) PUMApopnincz = Areapopulation, by(ers90 State PUMA PUMApopulation)
+</code></pre>
+<p>This replaces the existing dataset with a collapsed dataset, grouped by the variables in <code>by(varlist)</code>.  The specification of summary values (there can be more than one) come before the comma.  Translation of the above: for records grouped by the variables in <code>by()</code>, summarise <code>Areapopulation</code> with the function <code>sum</code> and store it in a new variable <code>PUMApopnincz</code>.  If no grouping variables are specified in <code>by()</code> this summarises the entire set of observations.</p>
 
     </div>
 
@@ -552,12 +613,6 @@
 
 
 
-
-<div class="article-tags">
-  
-  <a class="badge badge-light" href="/tag/latex/">LaTeX</a>
-  
-</div>
 
 
 
@@ -572,7 +627,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://mfransham.github.io/blog/combining-pdf-documents-with-latex/&amp;text=Combining%20pdf%20documents%20with%20LaTeX" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://mfransham.github.io/blog/guide-to-stata-for-r-users/&amp;text=" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -585,7 +640,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://mfransham.github.io/blog/combining-pdf-documents-with-latex/&amp;t=Combining%20pdf%20documents%20with%20LaTeX" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://mfransham.github.io/blog/guide-to-stata-for-r-users/&amp;t=" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -598,7 +653,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Combining%20pdf%20documents%20with%20LaTeX&amp;body=https://mfransham.github.io/blog/combining-pdf-documents-with-latex/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=&amp;body=https://mfransham.github.io/blog/guide-to-stata-for-r-users/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -611,7 +666,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://mfransham.github.io/blog/combining-pdf-documents-with-latex/&amp;title=Combining%20pdf%20documents%20with%20LaTeX" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://mfransham.github.io/blog/guide-to-stata-for-r-users/&amp;title=" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -624,7 +679,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Combining%20pdf%20documents%20with%20LaTeX%20https://mfransham.github.io/blog/combining-pdf-documents-with-latex/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=%20https://mfransham.github.io/blog/guide-to-stata-for-r-users/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -637,7 +692,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://mfransham.github.io/blog/combining-pdf-documents-with-latex/&amp;title=Combining%20pdf%20documents%20with%20LaTeX" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://mfransham.github.io/blog/guide-to-stata-for-r-users/&amp;title=" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
