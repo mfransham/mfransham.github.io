@@ -1,0 +1,26 @@
+@media (max-width: 600px) {
+ .navbar-brand {
+  visibility: hidden;
+ }
+}
+
+body {
+  font-size: 0.875rem;
+}
+
+h1, h2, h3 {
+  font-family: inherit;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+
+h3 {
+  font-size: 1rem;
+}
+
+a {
+  color: #5D8AA8;
+}
