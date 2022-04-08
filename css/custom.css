@@ -4,6 +4,20 @@
  }
 }
 
+.universal-wrapper {
+ margin:0 auto;
+ padding-right:1rem;
+ padding-left:1rem;
+ padding-top:0.1rem;
+ width:100%
+}
+
+@media only screen and (min-width: 801px) {
+ .universal-wrapper {
+  width:800px
+ }
+}
+
 body {
   font-size: 0.875rem;
 }
@@ -24,3 +38,4 @@ h3 {
 a {
   color: #5D8AA8;
 }
+
