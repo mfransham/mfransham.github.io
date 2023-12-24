@@ -38,8 +38,7 @@ knitreg_logistic <- function(l, ...) {
           override.coef = oc, 
           override.ci.low = ocl, 
           override.ci.up = ocu, 
-          ci.test = 1, 
-          caption = "Logistic regression model odds ratios",
+          ci.test = 1,
           ...)
   
 }
