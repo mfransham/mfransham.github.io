@@ -1,7 +1,7 @@
 # function for calculating number of words in R Markdown document
 # regular expression in gsub removes all YAML, code chunks and inline code
 # requires the magrittr package for the pipe operator
-wordcount <- function(rmd) {
+wordcount_old <- function(rmd) {
   if ( !("magrittr" %in% installed.packages() ) ) {stop("Please install magrittr package") }
   library(magrittr)
   readChar(rmd, 
